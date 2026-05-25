@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frederico Ribeiro Neto | Portfólio Acadêmico & Pesquisa</title>
+    
+    <!-- Meta tags SEO -->
+    <meta name="description" content="Portfólio acadêmico e profissional de Frederico Ribeiro Neto. Ciência do Esporte aplicada ao Paradesporto, reabilitação (Rede SARAH), biomecânica, força muscular e análise de dados.">
+    <meta name="keywords" content="Frederico Ribeiro Neto, Fred Ribeiro, Paradesporto, Reabilitação, Biomecânica, Rede SARAH, Halterofilismo, Lesão Medular, Lattes, ORCID, ResearchGate">
+    <meta name="author" content="Frederico Ribeiro Neto">
+    
+    <!-- Open Graph (Compartilhamento) -->
+    <meta property="og:title" content="Frederico Ribeiro Neto | Portfólio Acadêmico & Pesquisa">
+    <meta property="og:description" content="Ciência do Esporte aplicada ao Paradesporto, reabilitação e biomecânica.">
+    <meta property="og:type" content="website">
+    
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Chart.js CDN para Gráfico Bibliométrico -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Folha de estilos minimalista -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body data-theme="dark">
+
+    <!-- Cabeçalho & Navegação Fixa -->
+    <header id="main-header">
+        <div class="container nav-wrapper">
+            <a href="#" class="logo" id="header-logo-link">
+                <img src="logo_frn_black.png" alt="Logo FRN" class="logo-img" id="header-logo-img">
+            </a>
+            
+            <nav id="navbar-navigation" aria-label="Navegação principal">
+                <ul class="nav-menu" id="nav-menu-list">
+                    <li><a href="#about" class="nav-link">Sobre</a></li>
+                    <li><a href="#expertise" class="nav-link">Especialidades</a></li>
+                    <li><a href="#projects" class="nav-link">Projetos</a></li>
+                    <li><a href="#publications" class="nav-link">Publicações</a></li>
+                    <li>
+                        <button class="theme-toggle" id="theme-toggle-btn" aria-label="Alternar tema escuro/claro" title="Alternar tema">
+                            <i class="bi bi-moon-stars-fill"></i>
+                            <i class="bi bi-sun-fill"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            
+            <button class="menu-btn" id="mobile-menu-trigger" aria-label="Abrir menu de navegação">
+                <i class="bi bi-list"></i>
+            </button>
+        </div>
+    </header>
+
+    <main id="main-content">
+        
+        <!-- 1. Hero Section (Apresentação Principal) -->
+        <section id="about" class="hero-section">
+            <div class="container hero-wrapper">
+                <div class="hero-content">
+                    <span class="hero-tagline" id="hero-tagline-text">Ciência do Esporte, Biomecânica & Reabilitação</span>
+                    <h1 class="hero-title" id="hero-title-main">
+                        <span id="profile-name">Frederico Ribeiro Neto</span>
+                    </h1>
+                    <p class="hero-desc" id="profile-bio-text">
+                        Pesquisador na Rede SARAH de Hospitais de Reabilitação. Dedicado à Ciência do Esporte aplicada ao Paradesporto, Reabilitação e Biomecânica, com foco no desempenho motor, força muscular, análise biomecânica e classificação esportiva funcional em diversas modalidades paralímpicas.
+                    </p>
+                    
+                    <!-- Ações Rápidas (Lattes, ORCID, etc) -->
+                    <div class="hero-actions" id="hero-actions-container">
+                        <a href="#publications" class="btn btn-primary" id="hero-cta-publications">
+                            <i class="bi bi-journal-bookmark-fill"></i>
+                            Ver Publicações
+                        </a>
+                        <a href="#projects" class="btn btn-secondary" id="hero-cta-projects">
+                            <i class="bi bi-code-slash"></i>
+                            Explorar Projetos
+                        </a>
+                    </div>
+
+                    <!-- Badges de Indexação e Mídias Acadêmicas -->
+                    <div class="social-badges" id="academic-social-badges-container">
+                        <!-- Serão preenchidos dinamicamente pelo JavaScript -->
+                    </div>
+                </div>
+                
+                <div class="hero-visual" id="hero-avatar-visual">
+                    <div class="initials-avatar" id="profile-initials-avatar">
+                        FRN
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Especialidades / Áreas de Expertise -->
+        <section id="expertise" class="expertise-section">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-tagline">Minhas Competências</span>
+                    <h2 class="section-title">Linhas de Atuação Científica e Técnica</h2>
+                </div>
+                
+                <div class="expertise-grid" id="expertise-grid-container">
+                    <!-- Serão preenchidas dinamicamente pelo JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Projetos / Softwares Desenvolvidos -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-tagline">Portfólio de Software</span>
+                    <h2 class="section-title">Sistemas e Ferramentas Desenvolvidas</h2>
+                </div>
+                
+                <!-- Abas de Filtros de Projetos -->
+                <div class="filter-tabs" id="projects-filter-tabs-container">
+                    <button class="filter-btn active" id="projects-filter-btn-all" data-filter="all">Todos</button>
+                    <button class="filter-btn" id="projects-filter-btn-webapp" data-filter="Web App">Web Apps</button>
+                    <button class="filter-btn" id="projects-filter-btn-ai" data-filter="AI">Inteligência Artificial</button>
+                </div>
+                
+                <div class="projects-grid" id="projects-grid-container">
+                    <!-- Serão preenchidos dinamicamente pelo JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Publicações Acadêmicas -->
+        <section id="publications" class="publications-section">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="section-tagline">Produção Científica</span>
+                    <h2 class="section-title">Artigos Acadêmicos e Pesquisas</h2>
+                </div>
+                
+                <!-- Buscador de Artigos -->
+                <div class="search-box-wrapper" id="pub-search-box-container" style="margin-bottom: 1.5rem;">
+                    <i class="bi bi-search" id="pub-search-icon"></i>
+                    <input type="text" id="pub-search-input-field" class="search-input" placeholder="Buscar por palavra-chave no título, autor ou abstract..." aria-label="Buscar publicações">
+                </div>
+                
+                <!-- Dashboard de Estratificação de Artigos -->
+                <div class="filter-dashboard" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2.5rem;" id="pub-filters-dashboard">
+                    <div>
+                        <label for="filter-pub-year" style="display: block; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.4rem;">Estratificar por Ano</label>
+                        <select id="filter-pub-year" class="search-input" style="padding: 0.5rem 1rem; width: 100%; border-radius: var(--border-radius); border: 1px solid var(--panel-border); background: var(--bg-panel); color: var(--text-primary); font-family: inherit; font-size: 0.85rem; outline: none; cursor: pointer;">
+                            <option value="all">Todos os anos</option>
+                            <option value="2026">2026</option>
+                            <option value="2025">2025</option>
+                            <option value="2024">2024</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="before-2020">Antes de 2020 (2010-2019)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="filter-pub-theme" style="display: block; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.4rem;">Estratificar por Linha/Tema</label>
+                        <select id="filter-pub-theme" class="search-input" style="padding: 0.5rem 1rem; width: 100%; border-radius: var(--border-radius); border: 1px solid var(--panel-border); background: var(--bg-panel); color: var(--text-primary); font-family: inherit; font-size: 0.85rem; outline: none; cursor: pointer;">
+                            <option value="all">Todos os temas</option>
+                            <option value="Lesão Medular / Reabilitação">Lesão Medular / Reabilitação</option>
+                            <option value="Para-halterofilismo">Para-halterofilismo</option>
+                            <option value="Paracanoagem">Paracanoagem</option>
+                            <option value="Rugby em Cadeira de Rodas">Rugby em Cadeira de Rodas</option>
+                            <option value="Outros">Outros Temas</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="filter-pub-journal" style="display: block; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.4rem;">Estratificar por Periódico</label>
+                        <select id="filter-pub-journal" class="search-input" style="padding: 0.5rem 1rem; width: 100%; border-radius: var(--border-radius); border: 1px solid var(--panel-border); background: var(--bg-panel); color: var(--text-primary); font-family: inherit; font-size: 0.85rem; outline: none; cursor: pointer;">
+                            <option value="all">Todos os periódicos</option>
+                            <option value="Adapted Physical Activity Quarterly">Adapted Physical Activity Quarterly</option>
+                            <option value="Perceptual and Motor Skills">Perceptual and Motor Skills</option>
+                            <option value="Journal of Spinal Cord Medicine">Journal of Spinal Cord Medicine</option>
+                            <option value="Revista Brasileira de Medicina do Esporte">Revista Brasileira de Medicina do Esporte</option>
+                            <option value="Journal of Strength and Conditioning Research">Journal of Strength & Conditioning Research</option>
+                            <option value="Outras">Outros / Livros</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="filter-pub-author" style="display: block; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.4rem;">Estratificar por Autoria</label>
+                        <select id="filter-pub-author" class="search-input" style="padding: 0.5rem 1rem; width: 100%; border-radius: var(--border-radius); border: 1px solid var(--panel-border); background: var(--bg-panel); color: var(--text-primary); font-family: inherit; font-size: 0.85rem; outline: none; cursor: pointer;">
+                            <option value="all">Todas as autorias</option>
+                            <option value="first">F. Ribeiro Neto (1º Autor)</option>
+                            <option value="co">Coautor / Colaborador</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Contador de resultados -->
+                <div style="margin-bottom: 2rem; color: var(--text-secondary); font-size: 0.9rem;" id="pub-results-count-wrapper">
+                    Exibindo <span id="pub-results-count-value" style="color: var(--primary); font-weight: 700;">0</span> publicações.
+                </div>
+                
+                <div class="publications-list" id="publications-list-container">
+                    <!-- Serão preenchidos dinamicamente pelo JavaScript -->
+                </div>
+                
+                <!-- Grafico Bibliométrico de Coautoria -->
+                <div class="flat-card" style="margin-top: 3rem; background: var(--bg-panel);" id="bibliometrics-container">
+                    <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;"><i class="bi bi-graph-up-arrow" style="color: var(--primary); margin-right: 0.4rem;"></i> Rede de Coautoria Científica</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 1.5rem; line-height: 1.5;">
+                        Indicador bibliométrico dinâmico mapeando a frequência de colaboração científica do Dr. Frederico Ribeiro Neto com seus coautores nas 65 publicações catalogadas. Reflete a cooperação com pesquisadores da Rede SARAH, UnB, UNIFESP e parceiros internacionais.
+                    </p>
+                    <div style="position: relative; height: 350px; width: 100%;">
+                        <canvas id="coauthorsChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer id="main-footer">
+        <div class="container footer-wrapper">
+            <div class="logo footer-logo" id="footer-logo-link">
+                <img src="logo_frn_black.png" alt="Logo FRN" class="logo-img" id="footer-logo-img">
+            </div>
+            <p id="footer-copyright-text">&copy; 2026 Frederico Ribeiro Neto. Todos os direitos reservados.</p>
+            <p class="footer-ipc-note" id="footer-ipc-note-text">
+                <i class="bi bi-info-circle" style="color: var(--primary);"></i>
+                Este portfólio profissional está alinhado às diretrizes oficiais de nomenclatura do Comitê Paralímpico Internacional (IPC), promovendo um vocabulário respeitoso, preciso e isento de vieses capacitistas ao reportar o rendimento de atletas paralímpicos no paradesporto mundial.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts de Interatividade -->
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,725 @@
+{
+  "personal": {
+    "name": "Frederico Ribeiro Neto",
+    "nickname": "Fred",
+    "title": "Cientista do Esporte & Pesquisador",
+    "location": "Rede SARAH de Hospitais de Reabilitação",
+    "bio": "Possui doutorado em Atividade Física e Esporte pela Universidade de Brasília (2017) e mestrado em Ciências da Reabilitação pela Rede SARAH de Hospitais de Reabilitação (2009). Especialista pela Universidade Gama Filho (2003) e pela Universidade de Brasília (2011), realizando atualmente estágio de pós-doutorado pela Universidade Federal de São Paulo (UNIFESP). No Centro Internacional de Neurociências e Reabilitação SARAH Lago Norte, coordena as áreas de Educação Física, Fisioterapia e Terapia Ocupacional, além de gerir o Projeto de Esportes Paralímpicos. Exerce ainda as funções de Coordenador do Setor Náutico e Supervisor do Programa de Estágio em Educação Física da unidade. É membro do Comitê de Ética em Pesquisa (CEP) da Rede SARAH desde 2017 e atua como treinador de atletas de Paradesporto (Para canoagem e Para halterofilismo). Suas investigações científicas e atuação profissional concentram-se em: Paradesporto, Reabilitação e Treinamento.",
+    "avatar": "fred_profile.jpg"
+  },
+  "links": {
+    "lattes": "https://lattes.cnpq.br/9147993784328176",
+    "orcid": "https://orcid.org/0000-0002-7817-6001",
+    "scholar": "https://scholar.google.com.br/citations?user=gZ4UWrwAAAAJ&hl=pt-BR",
+    "github": "https://github.com/fredribeironeto",
+    "linkedin": "https://www.linkedin.com/in/fred-ribeiro-12000971/",
+    "researchgate": "https://www.researchgate.net/profile/Frederico-Ribeiro-Neto",
+    "email": "fredribeironeto@gmail.com",
+    "instagram": "https://www.instagram.com/fredribeironeto"
+  },
+  "expertise": [
+    {
+      "area": "Reabilitação & Biomecânica",
+      "icon": "bi-person-wheelchair",
+      "description": "Estudo do movimento humano, força muscular e adaptações neuromotoras no Centro Internacional de Neurociências SARAH Lago Norte."
+    },
+    {
+      "area": "Desempenho Motor",
+      "icon": "bi-speedometer2",
+      "description": "Mapeamento cinemático longitudinal de velocidade, acelerações, potência e fadiga neuromuscular em atletas paralímpicos."
+    },
+    {
+      "area": "Esportes Paralímpicos",
+      "icon": "bi-trophy",
+      "description": "Treinamento especializado em Paradesporto (Paracanoagem e Halterofilismo Paralímpico) e pesquisa de marcadores de classificação esportiva."
+    },
+    {
+      "area": "Telerreabilitação & Tele-exercício",
+      "icon": "bi-laptop",
+      "description": "Desenvolvimento e avaliação de programas de reabilitação e treinamento remotos controlados para pessoas com lesão medular."
+    }
+  ],
+  "projects": [
+    {
+      "title": "Paracanoe Pacing Analytics",
+      "category": "Web App",
+      "status": "Em produção",
+      "description": "Aplicativo web interativo para análise de pacing na Paracanoagem. Processa arquivos de telemetria GPS (Polar/Garmin), aplica filtros Hampel para remoção de ruídos cinemáticos e plota curvas de velocidade de 200m.",
+      "tech": [
+        "Python",
+        "Flask",
+        "Pandas",
+        "Chart.js",
+        "Hampel Filter"
+      ],
+      "demo": "https://paracanoe-pacing-analytics.onrender.com/",
+      "github": "https://github.com/fredribeironeto"
+    },
+    {
+      "title": "Dashboard Paracanoagem",
+      "category": "Web App",
+      "status": "Em desenvolvimento",
+      "description": "Painel analítico para monitoramento de atletas paralímpicos de canoagem brasileira de velocidade. Inclui modelos de efeitos mistos lineares para predição de trajetórias de rendimento longitudinal.",
+      "tech": [
+        "Python",
+        "Dash/Plotly",
+        "SQLite",
+        "Statsmodels"
+      ],
+      "demo": "#",
+      "github": "https://github.com/fredribeironeto"
+    }
+  ],
+  "publications": [
+    {
+      "title": "Assessment of the cardiac vagal reflex: validation of the 4-s exercise test during simulated wheelchair propulsion",
+      "authors": "Gustavo H. C. Bezerra; Marcela S. Araújo; Frederico Ribeiro Neto; Lauro C. Vianna",
+      "journal": "European Journal of Applied Physiology",
+      "year": 2026,
+      "theme": "Lesão Medular / Reabilitação",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Validação clínica do teste de exercício de 4 segundos para avaliar as respostas reativas vagais cardíacas rápidas em usuários de cadeira de rodas simulada, fornecendo novos dados autonômicos."
+    },
+    {
+      "title": "Comparison of the 200-Meter Race Phases Between Ergometer and On-Water Kayaks in Paralympic Canoe Sprint Athletes",
+      "authors": "Frederico Ribeiro Neto; Luiz Gustavo T. F. Santos; Rodrigo R. Gomes Costa; Ciro Winckler",
+      "journal": "Perceptual and Motor Skills",
+      "year": 2026,
+      "theme": "Para canoagem",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Análise comparativa das fases cinemáticas da corrida de 200m de velocidade entre ergômetro simulador e caiaque em condições de água em atletas de elite de paracanoagem."
+    },
+    {
+      "title": "Instant video replay in para taekwondo: Influence on referees' decisions and match outcomes",
+      "authors": "Rafael Lima Kons; Frederico Ribeiro Neto; Rodrigo R. Gomes Costa; Vinicius de Oliveira Guliás; Guilherme Felix",
+      "journal": "International Journal of Sports Science & Coaching",
+      "year": 2026,
+      "theme": "Outros",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Análise quantitativa do impacto do sistema IVR (Instant Video Replay) sobre a precisão de julgamento dos árbitros e as consequências táticas nos resultados em lutas oficiais de Para Taekwondo."
+    },
+    {
+      "title": "Paralympic health: emerging trends and innovations",
+      "authors": "Ciro Winckler; Frederico Ribeiro Neto; Rodrigo R. Gomes Costa; Irineu Loturco; Elke Lima Trigo; Andrea Jacusiel Miranda; Luiz Gustavo T. F. Santos",
+      "journal": "Frontiers in Sports and Active Living",
+      "year": 2026,
+      "theme": "Outros",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Comentário editorial sobre inovações estruturais, medicina preventiva, reabilitação física e avaliação do perfil de saúde em atletas de elite das equipes paralímpicas brasileiras."
+    },
+    {
+      "title": "Physical Activity Guidelines: Are They Adequate for People With Disabilities in Low- and Middle-Income Countries?",
+      "authors": "Frederico Ribeiro Neto; Rodrigo R. Gomes Costa; Sonny A. S. Bezerra; Ciro Winckler",
+      "journal": "Journal of Physical Activity & Health",
+      "year": 2026,
+      "theme": "Outros",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo analítico discutindo o impacto, viabilidade e adequação clínica das diretrizes globais de atividade física adaptada para pessoas com deficiência em países em desenvolvimento."
+    },
+    {
+      "title": "Acute Performance Decrement Following Training Based on the Phases of the 200-Meter Races in Paralympic Canoe Sprint Athletes",
+      "authors": "Frederico Ribeiro Neto; Luiz Gustavo T. F. Santos; Luis Felipe C. C. Campos; Rodrigo R. Gomes Costa; Ciro Winckler",
+      "journal": "Perceptual and Motor Skills",
+      "year": 2025,
+      "theme": "Para canoagem",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo experimental mapeando o decréscimo agudo de torque e velocidade em atletas de paracanoagem submetidos a regimes de treino intervalado intenso."
+    },
+    {
+      "title": "Angle Analysis in the Arched Technique: Cutoff Points for Maximum Strength in Para Powerlifting",
+      "authors": "Frederico Ribeiro Neto; Oliveira, R. X. C.; Fonseca, G.; João H. C. L. Veloso; Sonny A. S. Bezerra; Rodrigo R. Gomes Costa; Jefferson R. Dorneles",
+      "journal": "Adapted Physical Activity Quarterly",
+      "year": 2025,
+      "theme": "Para halterofilismo",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo inovador estabelecendo marcadores biomecânicos e ângulos ideais no supino em arco no para-halterofilismo brasileiro, definindo pontos de corte para geração de força máxima."
+    },
+    {
+      "title": "Comparison of shoulder pain, physical activity adherence, and compliance in wheelchair users with spinal cord injury",
+      "authors": "Frederico Ribeiro Neto; Rodrigo R. Gomes Costa; Jefferson R. Dorneles; Fonseca, G. C.; João H. C. L. Veloso; Sonny A. S. Bezerra; Ciro Winckler",
+      "journal": "Journal of Spinal Cord Medicine",
+      "year": 2025,
+      "theme": "Lesão Medular / Reabilitação",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Investigação da prevalência e intensidade de dor no ombro e adesão de treino em indivíduos cadeirantes sob diferentes níveis de programas de paradesporto em hospitais."
+    },
+    {
+      "title": "Tele-exercise in individuals with spinal cord injury: a systematic review",
+      "authors": "Rodrigo R. Gomes Costa; Beatriz Lucena Ramos; Frederico Ribeiro Neto; Ciro Winckler",
+      "journal": "Mhealth",
+      "year": 2025,
+      "theme": "Lesão Medular / Reabilitação",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Revisão sistemática de ensaios clínicos controlados e estudos longitudinais avaliando o impacto dos treinos de tele-exercício domésticos na aptidão funcional de pessoas com lesão medular."
+    },
+    {
+      "title": "Validity, reliability and minimal detectable change in the sit-to-stand test for synchronous and asynchronous tele-assessment in post-COVID-19 condition",
+      "authors": "Juliane M. Marques; Matheus Brasiliano da Paz; Rodrigo R. Gomes Costa; Frederico Ribeiro Neto",
+      "journal": "PeerJ",
+      "year": 2025,
+      "theme": "Outros",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Avaliação de reprodutibilidade síncrona e assíncrona de testes físicos de sentar-levantar realizados em ambiente domiciliar monitorado em pacientes pós-COVID-19 crônico."
+    },
+    {
+      "title": "Why Must Women Play Wheelchair Rugby Alongside Men?",
+      "authors": "Rodrigo R. Gomes Costa; Beatriz Lucena Ramos; Frederico Ribeiro Neto; Elke Lima Trigo; Ciro Winckler; R. E. A. Cidade",
+      "journal": "Australian Feminist Studies",
+      "year": 2025,
+      "theme": "Rugby em Cadeira de Rodas",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Discussão e modelagem de rendimento associando gênero no esporte misto Wheelchair Rugby, ressaltando o papel de integração funcional de para-atletas do gênero feminino."
+    },
+    {
+      "title": "Age-related Trajectory and Age at Peak Competitive Performance in Wheelchair Rugby Players at the Paralympic Games",
+      "authors": "Rodrigo R. Gomes Costa; Frederico Ribeiro Neto; Beatriz Lucena Ramos; Tanhoffer, Ricardo; Bob O'Shea; Ciro Winckler",
+      "journal": "American Journal of Physical Medicine & Rehabilitation",
+      "year": 2024,
+      "theme": "Lesão Medular / Reabilitação",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo clínico e biomecânico sobre reabilitação física, telerreabilitação e independência funcional em pessoas com lesão medular."
+    },
+    {
+      "title": "Comparison of Neuromuscular Fatigue in Powerlifting Paralympics in Different Training Methods",
+      "authors": "Getirana-mota, Márcio; Felipe J. Aidar; Frederico Ribeiro Neto; Santos, Taísa Pereira; Almeida-neto, Paulofrancisco De; Breno G. Cabral; Vieira-souza, Lucio Marques; Nuno D. Garrido; Victor M. Reis; Raphael Fabrício de Souza",
+      "journal": "Sports Medicine International Open",
+      "year": 2024,
+      "theme": "Para halterofilismo",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Investigação de marcadores de força muscular máxima, fadiga neuromuscular e análise biomecânica de técnicas no Para halterofilismo."
+    },
+    {
+      "title": "Effects of different training methods in tele-exercise on acute performance decrement in adults with disability and wheelchair users",
+      "authors": "Frederico Ribeiro Neto; Gustavo H. C. Bezerra; Xavier Couto De Oliveira, Rafael; Luis Felipe C. C. Campos; Rodrigo R. Gomes Costa",
+      "journal": "Disability and Rehabilitation: Assistive Technology",
+      "year": 2024,
+      "theme": "Lesão Medular / Reabilitação",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo clínico e biomecânico sobre reabilitação física, telerreabilitação e independência funcional em pessoas com lesão medular."
+    },
+    {
+      "title": "Origin of Impairment and Timing of Impairment Manifestation in Paralympic Sport",
+      "authors": "Frederico Ribeiro Neto; Ciro Winckler; Rodrigo R. Gomes Costa",
+      "journal": "American Journal of Physical Medicine & Rehabilitation",
+      "year": 2024,
+      "theme": "Outros",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Pesquisa acadêmica sobre atividade física adaptada, saúde paralímpica e ciências aplicadas ao paradesporto e reabilitação."
+    },
+    {
+      "title": "Systematization of Para Sport: a Brazilian Model of Comprehensive Proposal for Hospital Applications",
+      "authors": "Rodrigo R. Gomes Costa; Frederico Ribeiro Neto; Ciro Winckler",
+      "journal": "American Journal of Physical Medicine & Rehabilitation",
+      "year": 2024,
+      "theme": "Outros",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Pesquisa acadêmica sobre atividade física adaptada, saúde paralímpica e ciências aplicadas ao paradesporto e reabilitação."
+    },
+    {
+      "title": "Cross-Cultural Translation and Adaptation of the Perceived Recovery Status Scale to Brazilian Portuguese",
+      "authors": "Rodrigo R. Gomes Costa; Laurent, Matt; Frederico Ribeiro Neto; De Campos, Luis Felipe Castellicorrea; Ciro Winckler",
+      "journal": "Motricidade",
+      "year": 2023,
+      "theme": "Outros",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Pesquisa acadêmica sobre atividade física adaptada, saúde paralímpica e ciências aplicadas ao paradesporto e reabilitação."
+    },
+    {
+      "title": "Does tele-exercise training for tetraplegia meet the spinal cord injury-specific physical activity guidelines? A 7-month longitudinal study",
+      "authors": "Rodrigo R. Gomes Costa; Jefferson R. Dorneles; João H. C. L. Veloso; Carlos W. P. Gonçalves; Frederico Ribeiro Neto",
+      "journal": "Journal of Telemedicine and Telecare",
+      "year": 2023,
+      "theme": "Lesão Medular / Reabilitação",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo clínico e biomecânico sobre reabilitação física, telerreabilitação e independência funcional em pessoas com lesão medular."
+    },
+    {
+      "title": "Mechanical diagnosis and therapy in musculoskeletal pain of individuals with spinal cord injury",
+      "authors": "Poliana Grasser; Frederico Ribeiro Neto; João H. C. L. Veloso; Rodrigo R. Gomes Costa; Jefferson R. Dorneles",
+      "journal": "Journal of Spinal Cord Medicine",
+      "year": 2023,
+      "theme": "Lesão Medular / Reabilitação",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo clínico e biomecânico sobre reabilitação física, telerreabilitação e independência funcional em pessoas com lesão medular."
+    },
+    {
+      "title": "Performance Trajectory Related to Age, Classification and Sex in Elite Kayak Para Canoe athletes",
+      "authors": "Frederico Ribeiro Neto; Maria de Fátima Fernandes Vara; Jefferson R. Dorneles; Rodrigo R. Gomes Costa",
+      "journal": "American Journal of Physical Medicine & Rehabilitation",
+      "year": 2023,
+      "theme": "Para canoagem",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo focado na avaliação biomecânica, cinemática e trajetórias de rendimento de atletas na Para canoagem de velocidade."
+    },
+    {
+      "title": "Sit to stand test and handgrip strength in men and women with post-COVID-19 syndrome without invasive ventilator support: insights from a Brazilian observational study",
+      "authors": "Frederico Ribeiro Neto; Juliane M. Marques; Matheus Brasiliano da Paz; Eduardo Boiteux Uchôa Cavalcanti; Rodrigo R. Gomes Costa",
+      "journal": "Monaldi Archives for Chest Disease",
+      "year": 2023,
+      "theme": "Outros",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Pesquisa acadêmica sobre atividade física adaptada, saúde paralímpica e ciências aplicadas ao paradesporto e reabilitação."
+    },
+    {
+      "title": "Tele-health, tele-exercise and tele-assessment: an example of a fitness app for individuals with spinal cord injury",
+      "authors": "Rodrigo R. Gomes Costa; Frederico Ribeiro Neto; Ciro Winckler",
+      "journal": "JMIR mHealth and uHealth",
+      "year": 2023,
+      "theme": "Lesão Medular / Reabilitação",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo clínico e biomecânico sobre reabilitação física, telerreabilitação e independência funcional em pessoas com lesão medular."
+    },
+    {
+      "title": "Can Post-Exercise Hemodynamic Response Be Influenced by Different Recovery Methods in Paraplegic Sportsmen?",
+      "authors": "Felipe J. Aidar; Edilson F. Dantas; Paulo F. Almeida-Neto; Frederico Ribeiro Neto; Nuno D. Garrido; Breno G. Cabral; Tiago Figueiredo; Victor M. Reis",
+      "journal": "International Journal of Environmental Research and Public Health",
+      "year": 2022,
+      "theme": "Outros",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Pesquisa acadêmica sobre atividade física adaptada, saúde paralímpica e ciências aplicadas ao paradesporto e reabilitação."
+    },
+    {
+      "title": "Feasibility and validity of the push-up test for synchronous and asynchronous strength tele-assessment in spinal cord injury individuals with paraplegia",
+      "authors": "Rodrigo R. Gomes Costa; Jefferson R. Dorneles; João H. C. L. Veloso; Carlos W. P. Gonçalves; Frederico Ribeiro Neto",
+      "journal": "Journal of Spinal Cord Medicine",
+      "year": 2022,
+      "theme": "Lesão Medular / Reabilitação",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo clínico e biomecânico sobre reabilitação física, telerreabilitação e independência funcional em pessoas com lesão medular."
+    },
+    {
+      "title": "Force-velocity relationship in Paralympic powerlifting: two or multiple-point methods to determine a maximum repetition",
+      "authors": "Felipe J. Aidar; Ciro José Brito; Dihogo Gama de Matos; Levy Anthony S. de Oliveira; Raphael Fabrício de Souza; Paulo F. Almeida-Neto; Breno G. Cabral; Henrique P. Neiva; Frederico Ribeiro Neto; Victor M. Reis; Daniel A. Marinho; Mário C. Marques; Filipe Manuel Clemente; Hadi Nobari",
+      "journal": "BMC Sports Science, Medicine and Rehabilitation",
+      "year": 2022,
+      "theme": "Para halterofilismo",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Investigação de marcadores de força muscular máxima, fadiga neuromuscular e análise biomecânica de técnicas no Para halterofilismo."
+    },
+    {
+      "title": "Neuromuscular disorders in women and men with spinal cord injury are associated with changes in muscle and tendon architecture",
+      "authors": "Larissa Santana; Emerson Fachin-Martins; David Lobato Borges; Jonathan Galvão Tenório Cavalcante; Nicolas Babault; Frederico Ribeiro Neto; João Luiz Quagliotti Durigan; Rita de Cássia Marqueti",
+      "journal": "Journal of Spinal Cord Medicine",
+      "year": 2022,
+      "theme": "Lesão Medular / Reabilitação",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo clínico e biomecânico sobre reabilitação física, telerreabilitação e independência funcional em pessoas com lesão medular."
+    },
+    {
+      "title": "Time Course of Recovery Following CrossFit® Karen Benchmark Workout in Trained Men",
+      "authors": "Ivo Vieira de Sousa Neto; Nuno Manuel Frade de Sousa; Frederico Ribeiro Neto; Joao Henrique Falk Neto; Ramires Alsamir Tibana",
+      "journal": "Frontiers in Physiology",
+      "year": 2022,
+      "theme": "Outros",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Pesquisa acadêmica sobre atividade física adaptada, saúde paralímpica e ciências aplicadas ao paradesporto e reabilitação."
+    },
+    {
+      "title": "Accuracy and cut-off points of different models of knee extension strength analysis to identify walking performance in individuals with chronic stroke",
+      "authors": "Rodrigo R. Gomes Costa; Frederico Ribeiro Neto; Carlos W. P. Gonçalves; Rodrigo L. Carregaro",
+      "journal": "Revista Brasileira de Medicina do Esporte",
+      "year": 2021,
+      "theme": "Outros",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Pesquisa acadêmica sobre atividade física adaptada, saúde paralímpica e ciências aplicadas ao paradesporto e reabilitação."
+    },
+    {
+      "title": "Correlations Between Medicine Ball Throw With Wheelchair Mobility and Isokinetic Tests in Basketball Para-Athletes",
+      "authors": "Frederico Ribeiro Neto; Irineu Loturco; Guilherme Henrique Lopes; Jefferson R. Dorneles; José Irineu Gorla; Rodrigo R. Gomes Costa",
+      "journal": "Journal of Sport Rehabilitation",
+      "year": 2021,
+      "theme": "Lesão Medular / Reabilitação",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo clínico e biomecânico sobre reabilitação física, telerreabilitação e independência funcional em pessoas com lesão medular."
+    },
+    {
+      "title": "Evaluation of Strength and Muscle Activation Indicators in Sticking Point Region of National-Level Paralympic Powerlifting Athletes",
+      "authors": "Felipe J. Aidar; Filipe Manuel Clemente; Dihogo Gama de Matos; Anderson Carlos Marçal; Raphael Fabrício de Souza; Osvaldo Costa Moreira; Paulo F. Almeida-Neto; José Vilaça-Alves; Nuno D. Garrido; Jymmys Lopes dos Santos; Ian Jeffreys; Frederico Ribeiro Neto; Victor M. Reis; Breno G. Cabral; Thomas Rosemann; Beat Knechtle",
+      "journal": "Journal of Functional Morphology and Kinesiology",
+      "year": 2021,
+      "theme": "Para halterofilismo",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Investigação de marcadores de força muscular máxima, fadiga neuromuscular e análise biomecânica de técnicas no Para halterofilismo."
+    },
+    {
+      "title": "Handgrip Strength Cutoff Points for Functional Independence and Wheelchair Ability in MenWith Spinal Cord Injury",
+      "authors": "Frederico Ribeiro Neto; Rodrigo R. Gomes Costa; Dorneles, Jefferson R.; Carlos W. P. Gonçalves; João H. C. L. Veloso; Rodrigo L. Carregaro",
+      "journal": "Topics in Spinal Cord Injury Rehabilitation",
+      "year": 2021,
+      "theme": "Lesão Medular / Reabilitação",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo clínico e biomecânico sobre reabilitação física, telerreabilitação e independência funcional em pessoas com lesão medular."
+    },
+    {
+      "title": "Internal and External Training Workload Quantification in 4 Experienced Paracanoeing Athletes",
+      "authors": "Frederico Ribeiro Neto; Ramires Alsamir Tibana; Jefferson R. Dorneles; Rodrigo R. Gomes Costa",
+      "journal": "Journal of Sport Rehabilitation",
+      "year": 2021,
+      "theme": "Para canoagem",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo focado na avaliação biomecânica, cinemática e trajetórias de rendimento de atletas na Para canoagem de velocidade."
+    },
+    {
+      "title": "Medicine Ball Throw Responsiveness to Measure Wheelchair Basketball Mobility in Male Players",
+      "authors": "Rodrigo R. Gomes Costa; Jefferson R. Dorneles; Guilherme Henrique Lopes; José Irineu Gorla; Frederico Ribeiro Neto",
+      "journal": "Journal of Sport Rehabilitation",
+      "year": 2021,
+      "theme": "Lesão Medular / Reabilitação",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo clínico e biomecânico sobre reabilitação física, telerreabilitação e independência funcional em pessoas com lesão medular."
+    },
+    {
+      "title": "Peak Torque Prediction Using Handgrip and Strength Predictors in Men and Women With Motor Complete Spinal Cord Injury",
+      "authors": "Frederico Ribeiro Neto; Jefferson R. Dorneles; João H. C. L. Veloso; Carlos W. P. Gonçalves; Rodrigo R. Gomes Costa",
+      "journal": "Topics in Spinal Cord Injury Rehabilitation",
+      "year": 2021,
+      "theme": "Lesão Medular / Reabilitação",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo clínico e biomecânico sobre reabilitação física, telerreabilitação e independência funcional em pessoas com lesão medular."
+    },
+    {
+      "title": "Response letter to -Gait & Posture: Fatigue, fatigability, and muscle torquereduction-",
+      "authors": "Jefferson R. Dorneles; Frederico Ribeiro Neto; Carlos W. P. Gonçalves; Rodrigo R. Gomes Costa; Rodrigo L. Carregaro",
+      "journal": "Gait & Posture",
+      "year": 2021,
+      "theme": "Outros",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Pesquisa acadêmica sobre atividade física adaptada, saúde paralímpica e ciências aplicadas ao paradesporto e reabilitação."
+    },
+    {
+      "title": "Static and Dynamic Strength Indicators in Paralympic Power-Lifters with and without Spinal Cord Injury",
+      "authors": "L. J. Lopes Teles; Felipe J. Aidar; Matos, D. G.; Marçal, A. C.; Almeida-neto, P. F.; E. B. Neves; Moreira, O. C.; Frederico Ribeiro Neto; Garrido, N. D.; Vilaça-alves, J.; A. L. Díaz-de-Durana; Clemente, F. M.; Jeffreys, I.; Cabral, B. G. A. T.; Reis, V. M.",
+      "journal": "International Journal of Environmental Research and Public Health",
+      "year": 2021,
+      "theme": "Para halterofilismo",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Investigação de marcadores de força muscular máxima, fadiga neuromuscular e análise biomecânica de técnicas no Para halterofilismo."
+    },
+    {
+      "title": "Synchronous and asynchronous tele-exercise during the coronavirus disease 2019 pandemic: Comparisons of implementation and training load in individuals with spinal cord injury",
+      "authors": "Rodrigo R. Gomes Costa; Dorneles, Jefferson R; João H. C. L. Veloso; Carlos W. P. Gonçalves; Frederico Ribeiro Neto",
+      "journal": "Journal of Telemedicine and Telecare",
+      "year": 2021,
+      "theme": "Lesão Medular / Reabilitação",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo clínico e biomecânico sobre reabilitação física, telerreabilitação e independência funcional em pessoas com lesão medular."
+    },
+    {
+      "title": "The Torque Referenced to a Perceived Exertion Level Is Affected by the Type of Movement in Men With Spinal Cord Injury",
+      "authors": "Frederico Ribeiro Neto; Rodrigo R. Gomes Costa; Pereira Avela, B.; S. A. O. Júnior; A. M. Toledo; Rodrigo L. Carregaro",
+      "journal": "Topics in Spinal Cord Injury Rehabilitation",
+      "year": 2021,
+      "theme": "Lesão Medular / Reabilitação",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo clínico e biomecânico sobre reabilitação física, telerreabilitação e independência funcional em pessoas com lesão medular."
+    },
+    {
+      "title": "Validation Of the Repetitions in Reserve Rating Scale in Paralympic Powerlifting Athletes",
+      "authors": "Frederico Ribeiro Neto; Jefferson R. Dorneles; Felipe J. Aidar; Carlos W. P. Gonçalves; João H. C. L. Veloso; Rodrigo R. Gomes Costa",
+      "journal": "International Journal of Sports Medicine",
+      "year": 2021,
+      "theme": "Para halterofilismo",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Investigação de marcadores de força muscular máxima, fadiga neuromuscular e análise biomecânica de técnicas no Para halterofilismo."
+    },
+    {
+      "title": "Are Body Composition, Strength, and Functional Independence Similarities Between Spinal Cord Injury Classifications? A Discriminant Analysis",
+      "authors": "Rodrigo R. Gomes Costa; Rodrigo L. Carregaro; Frederico Ribeiro Neto",
+      "journal": "Journal of Sport Rehabilitation",
+      "year": 2020,
+      "theme": "Lesão Medular / Reabilitação",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo clínico e biomecânico sobre reabilitação física, telerreabilitação e independência funcional em pessoas com lesão medular."
+    },
+    {
+      "title": "Are the flat and arched bench press really similar?",
+      "authors": "Frederico Ribeiro Neto; Jefferson R. Dorneles; Rodrigo R. Gomes Costa",
+      "journal": "Sports Biomechanics",
+      "year": 2020,
+      "theme": "Para halterofilismo",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Investigação de marcadores de força muscular máxima, fadiga neuromuscular e análise biomecânica de técnicas no Para halterofilismo."
+    },
+    {
+      "title": "Does prolonged walking cause greater muscle fatigability in individuals withincomplete spinal cord injury compared with matched-controls?",
+      "authors": "Jefferson R. Dorneles; Frederico Ribeiro Neto; Carlos W. P. Gonçalves; Rodrigo R. Gomes Costa; Rodrigo L. Carregaro",
+      "journal": "Gait & Posture",
+      "year": 2020,
+      "theme": "Lesão Medular / Reabilitação",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo clínico e biomecânico sobre reabilitação física, telerreabilitação e independência funcional em pessoas com lesão medular."
+    },
+    {
+      "title": "Muscle strength cutoff-points for men with SCI Muscle strength cutoff-points for functional independence and wheelchair ability in men with spinal cord injury",
+      "authors": "Frederico Ribeiro Neto; Rodrigo R. Gomes Costa; Tanhoffer, R. A.; Josevan Cerqueira Leal; Martim Bottaro; Rodrigo L. Carregaro",
+      "journal": "Archives of Physical Medicine and Rehabilitation",
+      "year": 2020,
+      "theme": "Lesão Medular / Reabilitação",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo clínico e biomecânico sobre reabilitação física, telerreabilitação e independência funcional em pessoas com lesão medular."
+    },
+    {
+      "title": "Neuromuscular efficiency of men with high and low spinal cord injury levels compared with non-disabled participants",
+      "authors": "Frederico Ribeiro Neto; Rodrigo R. Gomes Costa; Tanhoffer, Ricardo Antônio; Josevan Cerqueira Leal; Martim Bottaro; Rodrigo L. Carregaro",
+      "journal": "Isokinetics and Exercise Science",
+      "year": 2020,
+      "theme": "Lesão Medular / Reabilitação",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo clínico e biomecânico sobre reabilitação física, telerreabilitação e independência funcional em pessoas com lesão medular."
+    },
+    {
+      "title": "Performance Differences Between the Arched and Flat Bench Press in Beginner and Experienced Paralympic Powerlifters",
+      "authors": "Frederico Ribeiro Neto; Jefferson R. Dorneles; Luna, R. M.; Spina, M. A.; Carlos W. P. Gonçalves; Rodrigo R. Gomes Costa",
+      "journal": "Journal of Strength and Conditioning Research",
+      "year": 2020,
+      "theme": "Para halterofilismo",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Investigação de marcadores de força muscular máxima, fadiga neuromuscular e análise biomecânica de técnicas no Para halterofilismo."
+    },
+    {
+      "title": "Cross-culturalvalidation of a Brazilian version of the adapted manual wheelchair circuit (AMWC-Brazil)",
+      "authors": "Frederico Ribeiro Neto; Rodrigo R. Gomes Costa; Ana Cláudia Garcia Lopes; Rodrigo L. Carregaro",
+      "journal": "Physiotherapy Theory and Practice",
+      "year": 2019,
+      "theme": "Lesão Medular / Reabilitação",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo clínico e biomecânico sobre reabilitação física, telerreabilitação e independência funcional em pessoas com lesão medular."
+    },
+    {
+      "title": "The addition of three new items in the Adapted Manual Wheelchair Circuit improves the discrimination between different levels of spinal cord injury",
+      "authors": "Frederico Ribeiro Neto; Rodrigo R. Gomes Costa; Rodrigo L. Carregaro",
+      "journal": "Motricidade",
+      "year": 2019,
+      "theme": "Lesão Medular / Reabilitação",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo clínico e biomecânico sobre reabilitação física, telerreabilitação e independência funcional em pessoas com lesão medular."
+    },
+    {
+      "title": "Cross-validity of one maximum repetition predictive equation for men with spinal cord injury",
+      "authors": "Rodrigo R. Gomes Costa; Frederico Ribeiro Neto",
+      "journal": "Journal of Spinal Cord Medicine",
+      "year": 2018,
+      "theme": "Lesão Medular / Reabilitação",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo clínico e biomecânico sobre reabilitação física, telerreabilitação e independência funcional em pessoas com lesão medular."
+    },
+    {
+      "title": "Differences of Relative and Absolute Strength of Individuals with Spinal Cord Injury from individuals without disability Subjects - A Discriminant Analysis",
+      "authors": "Frederico Ribeiro Neto; Rodrigo R. Gomes Costa; Tanhoffer, Ricardo; Martim Bottaro; Rodrigo L. Carregaro",
+      "journal": "Journal of Sport Rehabilitation",
+      "year": 2018,
+      "theme": "Lesão Medular / Reabilitação",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo clínico e biomecânico sobre reabilitação física, telerreabilitação e independência funcional em pessoas com lesão medular."
+    },
+    {
+      "title": "In Response to: Impact of CrossFit-Related Spinal Injuries",
+      "authors": "R. L. Almeida; V. G. Carvalho; Frederico Ribeiro Neto",
+      "journal": "Clinical Journal of Sport Medicine",
+      "year": 2018,
+      "theme": "Outros",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Pesquisa acadêmica sobre atividade física adaptada, saúde paralímpica e ciências aplicadas ao paradesporto e reabilitação."
+    },
+    {
+      "title": "Influence of familiarization on maximum strength testing in male individuals with spinal cord injury",
+      "authors": "Frederico Ribeiro Neto; Rodrigo R. Gomes Costa; Jefferson Rosa Cardoso; Lee Brown; Martim Bottaro; Rodrigo L. Carregaro",
+      "journal": "Isokinetics and Exercise Science",
+      "year": 2018,
+      "theme": "Lesão Medular / Reabilitação",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo clínico e biomecânico sobre reabilitação física, telerreabilitação e independência funcional em pessoas com lesão medular."
+    },
+    {
+      "title": "Neuromuscular efficiency of the knee joint muscles in the early-phase of strength training: effects of antagonist muscles pre-activation",
+      "authors": "Wagner Rodrigues Martins; Martim Bottaro; Euler Alves Cardoso; Frederico Ribeiro Neto; Rodrigo L. Carregaro",
+      "journal": "Motricidade",
+      "year": 2018,
+      "theme": "Outros",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Pesquisa acadêmica sobre atividade física adaptada, saúde paralímpica e ciências aplicadas ao paradesporto e reabilitação."
+    },
+    {
+      "title": "Functional Classification: Is There a Better Solution?",
+      "authors": "Frederico Ribeiro Neto; Lopes, G. H.; Rodrigo R. Gomes Costa",
+      "journal": "Journal of Sport Rehabilitation",
+      "year": 2017,
+      "theme": "Outros",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Pesquisa acadêmica sobre atividade física adaptada, saúde paralímpica e ciências aplicadas ao paradesporto e reabilitação."
+    },
+    {
+      "title": "Validity of one-repetition maximum predictive equations in men with spinal cord injury",
+      "authors": "Frederico Ribeiro Neto; Patrícia Guanais; Elisa Dornelas; Alessandra C. Coutinho; Rodrigo R. Gomes Costa",
+      "journal": "Spinal Cord",
+      "year": 2017,
+      "theme": "Lesão Medular / Reabilitação",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo clínico e biomecânico sobre reabilitação física, telerreabilitação e independência funcional em pessoas com lesão medular."
+    },
+    {
+      "title": "Influence of Relative Strength on Functional Independence of Patients With Spinal Cord Injury",
+      "authors": "Frederico Ribeiro Neto; Patrícia Guanais; Lopes, Guilherme H.; Elisa Dornelas; De Campos Barbetta, Daniela; Alessandra C. Coutinho; Carlos W. P. Gonçalves; Rodrigo R. Gomes Costa",
+      "journal": "Archives of Physical Medicine and Rehabilitation",
+      "year": 2016,
+      "theme": "Lesão Medular / Reabilitação",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo clínico e biomecânico sobre reabilitação física, telerreabilitação e independência funcional em pessoas com lesão medular."
+    },
+    {
+      "title": "Kinesiotaping enhances the rate of force development but not the neuromuscular efficiency of physically active young men",
+      "authors": "Igor Magalhães; Martim Bottaro; Rinaldo André Mezzarane; Frederico Ribeiro Neto; Bruno A. Rodrigues; João B. Ferreira-Junior; Rodrigo L. Carregaro",
+      "journal": "Journal of Electromyography and Kinesiology",
+      "year": 2016,
+      "theme": "Outros",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Pesquisa acadêmica sobre atividade física adaptada, saúde paralímpica e ciências aplicadas ao paradesporto e reabilitação."
+    },
+    {
+      "title": "Reproducibility and responsiveness of heart rate indexes to assess wheeling efficiency in patients with spinal cord injuries",
+      "authors": "Frederico Ribeiro Neto; Alessandra C. Coutinho; P. S. S. Beraldo",
+      "journal": "Spinal Cord",
+      "year": 2014,
+      "theme": "Lesão Medular / Reabilitação",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo clínico e biomecânico sobre reabilitação física, telerreabilitação e independência funcional em pessoas com lesão medular."
+    },
+    {
+      "title": "Sustained effect of resistance training on blood pressure and hand grip strength following a detraining period in elderly hypertensive women: a pilot study",
+      "authors": "Dahan da Cunha Nascimento; Ramires Alsamir Tibana; Franklin Benik; Keila Elizabeth Fontana; Frederico Ribeiro Neto; Frederico Santos de Santana; Leopoldo dos Santos Neto; Renato André Sousa da Silva; Alessandro de Oliveira Silva; Darlan Lopes de Farias; Jonato Prestes; Sandor Balsamo",
+      "journal": "Clinical Interventions in Aging",
+      "year": 2014,
+      "theme": "Outros",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Pesquisa acadêmica sobre atividade física adaptada, saúde paralímpica e ciências aplicadas ao paradesporto e reabilitação."
+    },
+    {
+      "title": "Validity of heart rate indexes to assess wheeling efficiency in patients with spinal cord injuries",
+      "authors": "Alessandra C. Coutinho; Frederico Ribeiro Neto; P. S. S. Beraldo",
+      "journal": "Spinal Cord",
+      "year": 2014,
+      "theme": "Lesão Medular / Reabilitação",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo clínico e biomecânico sobre reabilitação física, telerreabilitação e independência funcional em pessoas com lesão medular."
+    },
+    {
+      "title": "Análise dos valores de composição corporal em homens com diferentes níveis de lesão medular",
+      "authors": "Frederico Ribeiro Neto; Lopes, G. H.",
+      "journal": "Fisioterapia em Movimento",
+      "year": 2013,
+      "theme": "Outros",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Pesquisa acadêmica sobre atividade física adaptada, saúde paralímpica e ciências aplicadas ao paradesporto e reabilitação."
+    },
+    {
+      "title": "Determination of normative values for 20-min exercise of wheelchair propulsion by spinal cord injury patients",
+      "authors": "Alessandra C. Coutinho; Frederico Ribeiro Neto; C. E. V. Perna",
+      "journal": "Spinal Cord",
+      "year": 2013,
+      "theme": "Lesão Medular / Reabilitação",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo clínico e biomecânico sobre reabilitação física, telerreabilitação e independência funcional em pessoas com lesão medular."
+    },
+    {
+      "title": "The interactions between hemostasis and resistance training: a review",
+      "authors": "Dahan da Cunha Nascimento; Frederico Ribeiro Neto; Renato André Sousa da Silva Santana; Leopoldo dos Santos Neto; Sandor Balsamo",
+      "journal": "International Journal of General Medicine",
+      "year": 2012,
+      "theme": "Outros",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Pesquisa acadêmica sobre atividade física adaptada, saúde paralímpica e ciências aplicadas ao paradesporto e reabilitação."
+    },
+    {
+      "title": "Body composition modifications in people with chronic spinal cord injury after supervised physical activity",
+      "authors": "Frederico Ribeiro Neto; Guilherme Henrique Lopes",
+      "journal": "Journal of Spinal Cord Medicine",
+      "year": 2011,
+      "theme": "Lesão Medular / Reabilitação",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo clínico e biomecânico sobre reabilitação física, telerreabilitação e independência funcional em pessoas com lesão medular."
+    },
+    {
+      "title": "Treinamento resistido como intervenção na reabilitação em pacientes com lesão medular: uma revisão de literatura",
+      "authors": "Frederico Ribeiro Neto; Gentil, P.",
+      "journal": "Acta Fisiátrica",
+      "year": 2011,
+      "theme": "Lesão Medular / Reabilitação",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Estudo clínico e biomecânico sobre reabilitação física, telerreabilitação e independência funcional em pessoas com lesão medular."
+    },
+    {
+      "title": "Correlation of the Physical Valences Force, Flexibility and Balance with the Test of Activity of Daily Life to Arise Itself of the Ground",
+      "authors": "Frederico Ribeiro Neto; R. Parca; J. Carmo",
+      "journal": "The FIEP Bulletin",
+      "year": 2004,
+      "theme": "Outros",
+      "status": "Finalizado",
+      "doi": "#",
+      "abstract": "Pesquisa acadêmica sobre atividade física adaptada, saúde paralímpica e ciências aplicadas ao paradesporto e reabilitação."
+    }
+  ]
+}

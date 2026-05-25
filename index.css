@@ -1,0 +1,794 @@
+/* ==========================================================================
+   ESTILO MINIMALISTA E SÓBRIO - PORTFÓLIO DE FREDERICO RIBEIRO NETO
+   ========================================================================== */
+
+/* Fonte Sem Serifa Acadêmica e Moderna */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+    /* Paleta de Cores Sóbria (Default: Tema Claro) */
+    --bg-color: #fafafa;
+    --bg-panel: #ffffff;
+    --bg-panel-solid: #ffffff;
+    --panel-border: #e5e7eb;
+    --panel-border-hover: #9ca3af;
+    
+    --text-primary: #111827;
+    --text-secondary: #4b5563;
+    --text-muted: #9ca3af;
+    
+    --primary: #1e3a8a;           /* Azul Escuro Acadêmico / Deep Navy */
+    --primary-hover: #1d4ed8;
+    --primary-rgb: 30, 58, 138;
+    
+    --accent: #475569;            /* Cinza Ardósia / Slate */
+    --accent-hover: #334155;
+    
+    --success: #15803d;
+    --shadow: none;               /* Design plano, sem sombras pesadas */
+    --border-radius: 4px;         /* Cantos ligeiramente quadrados, mais corporativo */
+    
+    --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Tema Escuro (Sóbrio e de alto contraste) */
+[data-theme="dark"] {
+    --bg-color: #0b0f19;
+    --bg-panel: #111827;
+    --bg-panel-solid: #1f2937;
+    --panel-border: #1f2937;
+    --panel-border-hover: #4b5563;
+    
+    --text-primary: #f9fafb;
+    --text-secondary: #d1d5db;
+    --text-muted: #6b7280;
+    
+    --primary: #60a5fa;           /* Azul claro suave para contraste no escuro */
+    --primary-hover: #93c5fd;
+    --primary-rgb: 96, 165, 250;
+    
+    --accent: #94a3b8;
+    --accent-hover: #cbd5e1;
+    
+    --success: #22c55e;
+}
+
+/* Reset Geral */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Scrollbar Discreta */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--panel-border);
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
+}
+
+/* Seleção de Texto */
+::selection {
+    background-color: rgba(var(--primary-rgb), 0.15);
+    color: var(--text-primary);
+}
+
+/* Tipografia */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+/* Layout */
+.container {
+    width: 100%;
+    max-width: 1000px; /* Mais estreito, estilo paper/editorial */
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+section {
+    padding: 4.5rem 0;
+    border-bottom: 1px solid var(--panel-border); /* Linhas divisórias sutis */
+}
+
+/* Sem elementos Glow de fundo para manter a sobriedade */
+.bg-glow {
+    display: none;
+}
+
+/* ==========================================================================
+   COMPONENTES E NAVEGAÇÃO
+   ========================================================================== */
+
+/* Navbar Minimalista */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid var(--panel-border);
+    background-color: rgba(250, 250, 250, 0.95);
+    transition: var(--transition);
+}
+
+[data-theme="dark"] header {
+    background-color: rgba(11, 15, 25, 0.95);
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+}
+
+.logo-img {
+    height: 48px; /* Altura perfeita para máxima legibilidade */
+    width: auto;
+    object-fit: contain;
+    transition: var(--transition);
+    mix-blend-mode: multiply; /* Remove o fundo branco do PNG original no tema claro */
+}
+
+[data-theme="dark"] .logo-img {
+    filter: invert(1) brightness(2.0);
+    mix-blend-mode: screen; /* Remove o fundo preto resultante da inversão no tema escuro */
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    padding: 0.25rem 0;
+}
+
+.nav-link:hover {
+    color: var(--primary);
+}
+
+/* Alternador de Tema Minimalista */
+.theme-toggle {
+    background: none;
+    border: 1px solid var(--panel-border);
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 0.95rem;
+    padding: 0.4rem;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.theme-toggle:hover {
+    border-color: var(--text-primary);
+    color: var(--text-primary);
+}
+
+.theme-toggle .bi-sun-fill { display: none; }
+[data-theme="light"] .theme-toggle .bi-sun-fill { display: block; }
+[data-theme="light"] .theme-toggle .bi-moon-stars-fill { display: none; }
+
+/* Botões Modernos e Planos */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 0.6rem 1.2rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+    border: 1px solid transparent;
+}
+
+.btn-primary {
+    background-color: var(--text-primary);
+    color: var(--bg-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid var(--panel-border);
+    color: var(--text-primary);
+}
+
+.btn-secondary:hover {
+    border-color: var(--text-primary);
+}
+
+/* Crachás e Links Acadêmicos */
+.social-badges {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.social-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: var(--border-radius);
+    background: var(--bg-panel);
+    border: 1px solid var(--panel-border);
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    text-align: center;
+}
+
+.social-badge:hover {
+    color: var(--text-primary);
+    border-color: var(--text-primary);
+    transform: none; /* Sem efeito tridimensional */
+}
+
+/* Cartões Lisos / Flat Panel */
+.flat-card {
+    background: var(--bg-panel);
+    border: 1px solid var(--panel-border);
+    border-radius: var(--border-radius);
+    padding: 1.75rem;
+    transition: var(--transition);
+}
+
+.flat-card:hover {
+    border-color: var(--panel-border-hover);
+}
+
+/* ==========================================================================
+   SEÇÕES DO SITE
+   ========================================================================== */
+
+/* 1. Hero Section */
+.hero-wrapper {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 3rem;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.hero-tagline {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+.hero-title {
+    font-size: 2.75rem;
+    line-height: 1.2;
+    margin-bottom: 1.25rem;
+    font-weight: 700;
+}
+
+.hero-title span {
+    color: var(--primary);
+}
+
+.hero-desc {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Avatar de Iniciais Sóbrio e Flat */
+.hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.initials-avatar {
+    width: 240px;
+    height: 280px;
+    border-radius: var(--border-radius);
+    background-color: var(--panel-border);
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    border: 2px solid var(--bg-color);
+    box-shadow: 0 0 0 1px var(--panel-border);
+}
+
+#profile-avatar-img {
+    width: 240px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--bg-color);
+    box-shadow: 0 0 0 1px var(--panel-border);
+    transition: var(--transition);
+}
+
+/* 2. Especialidades */
+.section-title-wrapper {
+    margin-bottom: 3rem;
+    text-align: left; /* Alinhamento editorial clássico à esquerda */
+}
+
+.section-tagline {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-top: 0.25rem;
+}
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.expertise-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.5rem;
+}
+
+.expertise-icon-box {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--border-radius);
+    background: var(--bg-color);
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    border: 1px solid var(--panel-border);
+}
+
+/* 3. Projetos / Sites */
+.filter-tabs {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 1px solid var(--panel-border);
+    color: var(--text-secondary);
+    padding: 0.4rem 1rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.filter-btn:hover, .filter-btn.active {
+    border-color: var(--text-primary);
+    color: var(--text-primary);
+    background: var(--bg-panel-solid);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.project-category {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.project-status {
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+    background: var(--bg-color);
+    border: 1px solid var(--panel-border);
+    color: var(--text-secondary);
+}
+
+.project-status.active {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.project-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-desc {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    margin-bottom: 1.25rem;
+    flex-grow: 1;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-bottom: 1.5rem;
+}
+
+.tech-tag {
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    background: var(--bg-color);
+    border: 1px solid var(--panel-border);
+    color: var(--text-secondary);
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    border-top: 1px solid var(--panel-border);
+    padding-top: 1rem;
+}
+
+.project-link {
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: var(--text-secondary);
+}
+
+.project-link:hover {
+    color: var(--primary);
+}
+
+/* 4. Artigos Científicos */
+.search-box-wrapper {
+    max-width: 500px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.search-input {
+    width: 100%;
+    padding: 0.6rem 1rem 0.6rem 2.5rem;
+    border-radius: var(--border-radius);
+    background: var(--bg-panel);
+    border: 1px solid var(--panel-border);
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--text-primary);
+}
+
+.search-box-wrapper i {
+    position: absolute;
+    left: 0.9rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    font-size: 1rem;
+}
+
+.publications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.pub-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.pub-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.pub-year {
+    color: var(--primary);
+    padding: 0.1rem 0.4rem;
+    background: var(--bg-color);
+    border: 1px solid var(--panel-border);
+    border-radius: 3px;
+}
+
+.pub-journal {
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.pub-status {
+    color: var(--success);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+.pub-title {
+    font-size: 1.15rem;
+    margin: 0.15rem 0;
+    font-weight: 600;
+}
+
+.pub-authors {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+.pub-abstract-trigger {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    cursor: pointer;
+    background: none;
+    border: none;
+    margin-top: 0.25rem;
+    transition: var(--transition);
+}
+
+.pub-abstract-trigger:hover {
+    color: var(--text-primary);
+}
+
+.pub-abstract {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    background: var(--bg-color);
+    border-left: 2px solid var(--text-primary);
+    padding: 0.75rem 1.25rem;
+    border-radius: 0;
+    margin-top: 0.5rem;
+    display: none;
+}
+
+.pub-links {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 0.75rem;
+}
+
+.pub-link {
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.3rem 0.6rem;
+    background: var(--bg-color);
+    border: 1px solid var(--panel-border);
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: var(--text-secondary);
+}
+
+.pub-link:hover {
+    border-color: var(--text-primary);
+    color: var(--text-primary);
+}
+
+/* ==========================================================================
+   FOOTER (RODAPÉ)
+   ========================================================================== */
+footer {
+    padding: 2.5rem 0;
+    text-align: center;
+    background-color: var(--bg-color);
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    border-top: none; /* Removida borda dupla, a divisória já fecha a página */
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.footer-logo {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.footer-ipc-note {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    max-width: 700px;
+    margin-top: 0.5rem;
+    line-height: 1.4;
+}
+
+/* ==========================================================================
+   MENU MOBILE E RESPONSIVIDADE
+   ========================================================================== */
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 110;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 3rem 0;
+    }
+    
+    .hero-wrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: left; /* Mantém o padrão minimalista alinhado à esquerda */
+    }
+    
+    .hero-visual {
+        justify-content: flex-start;
+    }
+    
+    .hero-title {
+        font-size: 2.25rem;
+    }
+    
+    .menu-btn {
+        display: block;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 280px;
+        height: 100vh;
+        background: var(--bg-panel-solid);
+        border-left: 1px solid var(--panel-border);
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem;
+        transition: 0.3s ease;
+        z-index: 105;
+    }
+    
+    .nav-menu.active {
+        right: 0;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Toast Notification Premium */
+.toast {
+    position: fixed;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background-color: var(--bg-panel-solid);
+    color: var(--text-primary);
+    border: 1px solid var(--panel-border-hover);
+    padding: 0.8rem 1.6rem;
+    border-radius: var(--border-radius);
+    font-size: 0.85rem;
+    font-weight: 500;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    z-index: 1000;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    pointer-events: none;
+}
+
+.toast.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
+
