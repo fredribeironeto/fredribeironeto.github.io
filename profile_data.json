@@ -58,7 +58,7 @@
     {
       "title": "Dashboard Paracanoagem",
       "category": "Web App",
-      "status": "Em desenvolvimento",
+      "status": "Em produção",
       "description": "Painel analítico para monitoramento de atletas paralímpicos de canoagem brasileira de velocidade. Inclui modelos de efeitos mistos lineares para predição de trajetórias de rendimento longitudinal.",
       "tech": [
         "Python",
@@ -66,7 +66,7 @@
         "SQLite",
         "Statsmodels"
       ],
-      "demo": "#",
+      "demo": "https://paracanoe-200m-dashboard.onrender.com/",
       "github": "https://github.com/fredribeironeto"
     }
   ],

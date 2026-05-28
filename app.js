@@ -63,7 +63,7 @@ const PROFILE_DATA_FALLBACK = {
     {
       "title": "Dashboard Paracanoagem",
       "category": "Web App",
-      "status": "Em desenvolvimento",
+      "status": "Em produção",
       "description": "Painel analítico para monitoramento de atletas paralímpicos de canoagem brasileira de velocidade. Inclui modelos de efeitos mistos lineares para predição de trajetórias de rendimento longitudinal.",
       "tech": [
         "Python",
@@ -71,7 +71,7 @@ const PROFILE_DATA_FALLBACK = {
         "SQLite",
         "Statsmodels"
       ],
-      "demo": "#",
+      "demo": "https://paracanoe-200m-dashboard.onrender.com/",
       "github": "https://github.com/fredribeironeto"
     }
   ],
@@ -736,7 +736,8 @@ let profileData = null;
 // ==========================================================================
 async function loadProfileData() {
     try {
-        const response = await fetch('profile_data.json');
+        // Cache-buster para evitar que o navegador sirva uma versão antiga em cache do JSON
+        const response = await fetch('profile_data.json?t=' + new Date().getTime());
         if (!response.ok) {
             throw new Error('Erro ao carregar o arquivo JSON local');
         }
